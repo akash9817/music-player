@@ -59,4 +59,7 @@
       .progress{
           margin:none
       }
+      .controls{
+        width:90%;
+      }
   }
