@@ -1,0 +1,62 @@
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   height: 100%;
+  }
+  .player h2,h3{
+    margin: 4px;
+    color:#ffeaea
+  }
+  .coverImg{
+    width: 19rem;
+  }
+  .coverImg img{
+    border-radius: 8px;
+    width: 100%;
+  }
+  .progress{
+    width: 100%;
+    height: 7px;
+    background-color:#232933;
+    border-radius: 4px;
+    margin:20px 5px 0 ;
+  }
+  .playhead{
+    width: 1%;
+    height: 6px;
+    background-color: #ffeaea;
+    border-radius: 4px;
+  }
+  .controls{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .icon{
+    font-size: 25px;
+    color: #ffeaea
+  }
+  .icon:nth-child(3){
+    font-size: 60px;
+  }
+  .icon:hover{
+    color:#0e0e78
+  }
+  .icon:active{
+    transform: scale(1.2);
+  }
+  .active{
+    color:#0e0e78
+  }
+
+  @media screen and (max-width:600px){
+      .coverImg{
+          width: 90%
+      }
+      .progress{
+          margin:none
+      }
+  }

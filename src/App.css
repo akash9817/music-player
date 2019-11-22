@@ -1,0 +1,51 @@
+
+body{
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  min-height: 100vh;
+  background: rgb(83,80,134);
+background: linear-gradient(90deg, rgba(83,80,134,1) 0%, rgba(123,123,201,1) 15%, rgba(2,185,249,0.8127626050420168) 100%);
+}
+.App {
+  box-sizing: border-box;
+  text-align: center;
+  width: 90%;
+  height: 95%;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: rgba(0,0,0,0.3);
+  border-radius: 5px;
+  padding: 10px;
+}
+.left{
+  border-right: 0.1px solid lightgrey;
+  flex-basis: 63%;
+  padding: 10px;
+  padding-right: 23px;
+}
+.playlist{
+  display: flex;
+  flex: 1;
+  min-height: 0px;
+}
+
+@media screen and (max-width:600px){
+  .App{
+    flex-direction: column;
+    padding: 0px;
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+  }
+  .left{
+    border: none;
+    flex:1
+  }
+  .playlist{
+    flex:0
+  }
+  
+}

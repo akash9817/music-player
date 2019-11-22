@@ -1,0 +1,75 @@
+::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 6px ;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background:transparent;
+    border-radius: 6px ; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ffeaea;
+    border-radius: 6px ;
+  }
+ 
+.playlist{
+    align-items: center;
+    overflow: auto;
+}
+.card{
+    display: flex;
+    width: 80%;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #ffeaea;
+    font-size: 110%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffeaea;;
+}
+ 
+.card img{
+    width: 40%;
+    margin-right: 13px ;
+    border-radius: 8px;
+}
+.info{
+    text-align: left;
+}
+@media screen and (max-width:600px){
+    .playlist{
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        align-items: baseline;
+        padding: 10px;
+        height:fit-content
+    }
+    .card{
+        /* min-width: 60%; */
+        min-width: 35%;
+        border:none;
+        flex-direction: column;
+        margin-top:0;
+        margin-bottom: 0;
+        margin-right:10px;
+        flex: 1 1 auto;
+        overflow-y: auto;
+        min-height: 100px;
+        padding-bottom: 0px ;
+    }
+    .card img{
+        width: 80%;
+    }
+    .info{
+        text-align: start;
+        font-size: 16px;
+    }
+    .info h4,p{
+        margin:8px
+    }
+    
+}
