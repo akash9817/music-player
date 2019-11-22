@@ -117,7 +117,7 @@ class App extends Component {
     this.audioRef.autoplay = true
   }
   componentDidMount(){
-    axios.get("http://5dd1894f15bbc2001448d28e.mockapi.io/playlist")
+    axios.get("https://5dd1894f15bbc2001448d28e.mockapi.io/playlist")
     .then(res => {
       this.setState({playlist:res.data,
         coverImg:res.data[0].albumCover,
