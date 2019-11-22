@@ -39,6 +39,7 @@ background: linear-gradient(90deg, rgba(83,80,134,1) 0%, rgba(123,123,201,1) 15%
     width: 100%;
     height: max-content;
     min-height: 100vh;
+    overflow:auto;
   }
   .left{
     border: none;
